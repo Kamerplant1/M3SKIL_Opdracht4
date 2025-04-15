@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="JS/main.js" defer></script>
+</head>
+
+<body>
+    <main class="dashboard">
+        <section class="section--first">
+            <article class="card card--first">
+                <div class="container">
+                    <div class="clock">
+                        <div style="--clr: #ff3d58; --h: 4.7rem" id="hour" class="hand">
+                            <i></i>
+                        </div>
+                        <div style="--clr: #00a6ff; --h: 5.2rem" id="min" class="hand">
+                            <i></i>
+                        </div>
+                        <div style="--clr: #ffffff; --h: 5.7rem" id="sec" class="hand">
+                            <i></i>
+                        </div>
+
+                        <span style="--i: 1"><b>1</b></span>
+                        <span style="--i: 2"><b>2</b></span>
+                        <span style="--i: 3"><b>3</b></span>
+                        <span style="--i: 4"><b>4</b></span>
+                        <span style="--i: 5"><b>5</b></span>
+                        <span style="--i: 6"><b>6</b></span>
+                        <span style="--i: 7"><b>7</b></span>
+                        <span style="--i: 8"><b>8</b></span>
+                        <span style="--i: 9"><b>9</b></span>
+                        <span style="--i: 10"><b>10</b></span>
+                        <span style="--i: 11"><b>11</b></span>
+                        <span style="--i: 12"><b>12</b></span>
+                    </div>
+                </div>
+            </article>
+            <article class="card card--second">
+                <canvas id="js--chart--1" , width="100%" height="100%"></canvas>
+            </article>
+            <article class="card card--third">
+                <h2 id="js--actuelebuitentemp"></h2>
+                <p id="js--weatherType"></p>
+            </article>
+            <article class="card card--fourth">
+                <div class="container2">
+                    <div class="calculator">
+                      <input type="text" id="inputBox" placeholder="0" />
+                      <div>
+                        <button class="button operator">AC</button>
+                        <button class="button operator">DEL</button>
+                        <button class="button operator">%</button>
+                        <button class="button operator">/</button>
+                      </div>
+                      <div>
+                        <button class="button">7</button>
+                        <button class="button">8</button>
+                        <button class="button">9</button>
+                        <button class="button operator">*</button>
+                      </div>
+                      <div>
+                        <button class="button">4</button>
+                        <button class="button">5</button>
+                        <button class="button">6</button>
+                        <button class="button operator">-</button>
+                      </div>
+                      <div>
+                        <button class="button">1</button>
+                        <button class="button">2</button>
+                        <button class="button">3</button>
+                        <button class="button operator">+</button>
+                      </div>
+              
+                      <div>
+                        <button class="button">00</button>
+                        <button class="button">0</button>
+                        <button class="button">.</button>
+                        <button class="button equalBtn">=</button>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+        </section>
+
+        <section class="section--second">
+            <canvas id="js--chart--2"></canvas>
+        </section>
+    </main>
+</body>
+
+</html>
